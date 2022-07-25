@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.newt.boot.dal.mapper.BizMarketerAdvertMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.newt.boot.dal.entity.BizMarketerAdvert">
+        <id column="id" property="id" />
+        <result column="advert_type" property="advertType" />
+        <result column="effect_date" property="effectDate" />
+        <result column="invalid_date" property="invalidDate" />
+        <result column="advert_desc" property="advertDesc" />
+        <result column="page_info" property="pageInfo" />
+        <result column="status" property="status" />
+        <result column="act_audit_state" property="actAuditState" />
+        <result column="del_flag" property="delFlag" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, advert_type, effect_date, invalid_date, advert_desc, page_info, status, act_audit_state, del_flag
+    </sql>
+
+</mapper>

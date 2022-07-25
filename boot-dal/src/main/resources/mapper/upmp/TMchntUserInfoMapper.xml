@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.newt.boot.dal.mapper.TMchntUserInfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.newt.boot.dal.entity.TMchntUserInfo">
+        <id column="user_id" property="userId" />
+        <result column="login" property="login" />
+        <result column="avatar" property="avatar" />
+        <result column="name" property="name" />
+        <result column="nick" property="nick" />
+        <result column="gender" property="gender" />
+        <result column="phone" property="phone" />
+        <result column="email" property="email" />
+        <result column="role" property="role" />
+        <result column="mchnt_no" property="mchntNo" />
+        <result column="mchnt_name" property="mchntName" />
+        <result column="cashier_no" property="cashierNo" />
+        <result column="tx_passwd" property="txPasswd" />
+        <result column="pos_passwd" property="posPasswd" />
+        <result column="salt" property="salt" />
+        <result column="device_id" property="deviceId" />
+        <result column="status" property="status" />
+        <result column="create_by" property="createBy" />
+        <result column="create_time" property="createTime" />
+        <result column="update_by" property="updateBy" />
+        <result column="update_time" property="updateTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        user_id, login, avatar, name, nick, gender, phone, email, role, mchnt_no, mchnt_name, cashier_no, tx_passwd, pos_passwd, salt, device_id, status, create_by, create_time, update_by, update_time
+    </sql>
+
+</mapper>

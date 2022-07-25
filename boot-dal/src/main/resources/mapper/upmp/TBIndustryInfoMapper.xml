@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.newt.boot.dal.mapper.TBIndustryInfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.newt.boot.dal.entity.TBIndustryInfo">
+        <id column="id" property="id" />
+        <result column="industry_type" property="industryType" />
+        <result column="industry_name" property="industryName" />
+        <result column="industry_desc" property="industryDesc" />
+        <result column="grp_no" property="grpNo" />
+        <result column="mer_busi_type" property="merBusiType" />
+        <result column="audit_refuse_reason" property="auditRefuseReason" />
+        <result column="status" property="status" />
+        <result column="audit_status" property="auditStatus" />
+        <result column="crt_org_id" property="crtOrgId" />
+        <result column="opr_id" property="oprId" />
+        <result column="create_time" property="createTime" />
+        <result column="last_opr_id" property="lastOprId" />
+        <result column="last_update_time" property="lastUpdateTime" />
+        <result column="last_audit_id" property="lastAuditId" />
+        <result column="last_audit_time" property="lastAuditTime" />
+        <result column="reserve1" property="reserve1" />
+        <result column="reserve2" property="reserve2" />
+        <result column="reserve3" property="reserve3" />
+        <result column="reserve4" property="reserve4" />
+        <result column="reserve5" property="reserve5" />
+        <result column="reserve6" property="reserve6" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, industry_type, industry_name, industry_desc, grp_no, mer_busi_type, audit_refuse_reason, status, audit_status, crt_org_id, opr_id, create_time, last_opr_id, last_update_time, last_audit_id, last_audit_time, reserve1, reserve2, reserve3, reserve4, reserve5, reserve6
+    </sql>
+
+</mapper>

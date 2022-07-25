@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.newt.boot.dal.mapper.TBRegionInfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.newt.boot.dal.entity.TBRegionInfo">
+        <id column="id" property="id" />
+        <result column="region_code" property="regionCode" />
+        <result column="region_name" property="regionName" />
+        <result column="parent_code" property="parentCode" />
+        <result column="region_level" property="regionLevel" />
+        <result column="area_code" property="areaCode" />
+        <result column="alipay_adcode" property="alipayAdcode" />
+        <result column="audit_refuse_reason" property="auditRefuseReason" />
+        <result column="status" property="status" />
+        <result column="audit_status" property="auditStatus" />
+        <result column="crt_org_id" property="crtOrgId" />
+        <result column="opr_id" property="oprId" />
+        <result column="create_time" property="createTime" />
+        <result column="last_opr_id" property="lastOprId" />
+        <result column="last_update_time" property="lastUpdateTime" />
+        <result column="last_audit_id" property="lastAuditId" />
+        <result column="last_audit_time" property="lastAuditTime" />
+        <result column="remark1" property="remark1" />
+        <result column="remark2" property="remark2" />
+        <result column="remark3" property="remark3" />
+        <result column="remark4" property="remark4" />
+        <result column="remark5" property="remark5" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, region_code, region_name, parent_code, region_level, area_code, alipay_adcode, audit_refuse_reason, status, audit_status, crt_org_id, opr_id, create_time, last_opr_id, last_update_time, last_audit_id, last_audit_time, remark1, remark2, remark3, remark4, remark5
+    </sql>
+
+</mapper>

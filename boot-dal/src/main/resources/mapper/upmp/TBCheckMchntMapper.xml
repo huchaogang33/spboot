@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.newt.boot.dal.mapper.TBCheckMchntMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.newt.boot.dal.entity.TBCheckMchnt">
+        <id column="id" property="id" />
+        <result column="inst_id" property="instId" />
+        <result column="mchnt_no" property="mchntNo" />
+        <result column="sign_inst_id" property="signInstId" />
+        <result column="sign_inst_type" property="signInstType" />
+        <result column="manager_id" property="managerId" />
+        <result column="manager_name" property="managerName" />
+        <result column="is_mchnt_name" property="isMchntName" />
+        <result column="is_mchnt_type" property="isMchntType" />
+        <result column="is_mchnt_content" property="isMchntContent" />
+        <result column="is_credit_code" property="isCreditCode" />
+        <result column="is_artif" property="isArtif" />
+        <result column="is_settle_acct" property="isSettleAcct" />
+        <result column="is_term_addr" property="isTermAddr" />
+        <result column="manager_mchnt_image" property="managerMchntImage" />
+        <result column="manager_mchnt_shop_image" property="managerMchntShopImage" />
+        <result column="mchnt_platform_query" property="mchntPlatformQuery" />
+        <result column="anti_money_laund" property="antiMoneyLaund" />
+        <result column="check_result" property="checkResult" />
+        <result column="check_audit_status" property="checkAuditStatus" />
+        <result column="check_reject_reason" property="checkRejectReason" />
+        <result column="data_status" property="dataStatus" />
+        <result column="opr_id" property="oprId" />
+        <result column="create_time" property="createTime" />
+        <result column="last_opr_id" property="lastOprId" />
+        <result column="last_update_time" property="lastUpdateTime" />
+        <result column="last_audit_id" property="lastAuditId" />
+        <result column="last_audit_time" property="lastAuditTime" />
+        <result column="remark1" property="remark1" />
+        <result column="remark2" property="remark2" />
+        <result column="remark3" property="remark3" />
+        <result column="mchnt_name" property="mchntName" />
+        <result column="mchnt_type" property="mchntType" />
+        <result column="settle_acct_type" property="settleAcctType" />
+        <result column="industry_type" property="industryType" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        inst_id, mchnt_no, sign_inst_id, sign_inst_type, manager_id, manager_name, is_mchnt_name, is_mchnt_type, is_mchnt_content, is_credit_code, is_artif, is_settle_acct, is_term_addr, manager_mchnt_image, manager_mchnt_shop_image, mchnt_platform_query, anti_money_laund, check_result, check_audit_status, check_reject_reason, data_status, opr_id, create_time, last_opr_id, last_update_time, last_audit_id, last_audit_time, id, remark1, remark2, remark3, mchnt_name, mchnt_type, settle_acct_type, industry_type
+    </sql>
+
+</mapper>

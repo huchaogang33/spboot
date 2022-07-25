@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.newt.boot.dal.mapper.TBAgentInfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.newt.boot.dal.entity.TBAgentInfo">
+        <id column="agent_code" property="agentCode" />
+        <result column="id" property="id" />
+        <result column="inst_id" property="instId" />
+        <result column="agent_name" property="agentName" />
+        <result column="agent_simple_name" property="agentSimpleName" />
+        <result column="super_agent_code" property="superAgentCode" />
+        <result column="manage_inst_id" property="manageInstId" />
+        <result column="licence_type" property="licenceType" />
+        <result column="licence_code" property="licenceCode" />
+        <result column="register_capital" property="registerCapital" />
+        <result column="artif_name" property="artifName" />
+        <result column="artif_cert_type" property="artifCertType" />
+        <result column="artif_cert_no" property="artifCertNo" />
+        <result column="cert_effective_date" property="certEffectiveDate" />
+        <result column="cert_expiry_date" property="certExpiryDate" />
+        <result column="artif_mobile" property="artifMobile" />
+        <result column="artif_email" property="artifEmail" />
+        <result column="contact_name" property="contactName" />
+        <result column="contact_phone" property="contactPhone" />
+        <result column="contact_emaiil" property="contactEmaiil" />
+        <result column="post_code" property="postCode" />
+        <result column="agent_addr" property="agentAddr" />
+        <result column="is_profit_flag" property="isProfitFlag" />
+        <result column="is_show_all_flag" property="isShowAllFlag" />
+        <result column="settle_type" property="settleType" />
+        <result column="settle_cycle" property="settleCycle" />
+        <result column="settle_acct_no" property="settleAcctNo" />
+        <result column="settle_acct_type" property="settleAcctType" />
+        <result column="settle_acct_name" property="settleAcctName" />
+        <result column="acct_open_bank_no" property="acctOpenBankNo" />
+        <result column="acct_open_bank_name" property="acctOpenBankName" />
+        <result column="acct_open_province" property="acctOpenProvince" />
+        <result column="acct_open_city" property="acctOpenCity" />
+        <result column="acct_open_area" property="acctOpenArea" />
+        <result column="profit_rule" property="profitRule" />
+        <result column="agent_status" property="agentStatus" />
+        <result column="audit_status" property="auditStatus" />
+        <result column="stop_reason" property="stopReason" />
+        <result column="cancel_reason" property="cancelReason" />
+        <result column="audit_refuse_reason" property="auditRefuseReason" />
+        <result column="crt_org_id" property="crtOrgId" />
+        <result column="opr_id" property="oprId" />
+        <result column="create_time" property="createTime" />
+        <result column="last_opr_id" property="lastOprId" />
+        <result column="last_update_time" property="lastUpdateTime" />
+        <result column="last_audit_id" property="lastAuditId" />
+        <result column="last_audit_time" property="lastAuditTime" />
+        <result column="remark1" property="remark1" />
+        <result column="remark2" property="remark2" />
+        <result column="remark3" property="remark3" />
+        <result column="remark4" property="remark4" />
+        <result column="remark5" property="remark5" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, inst_id, agent_code, agent_name, agent_simple_name, super_agent_code, manage_inst_id, licence_type, licence_code, register_capital, artif_name, artif_cert_type, artif_cert_no, cert_effective_date, cert_expiry_date, artif_mobile, artif_email, contact_name, contact_phone, contact_emaiil, post_code, agent_addr, is_profit_flag, is_show_all_flag, settle_type, settle_cycle, settle_acct_no, settle_acct_type, settle_acct_name, acct_open_bank_no, acct_open_bank_name, acct_open_province, acct_open_city, acct_open_area, profit_rule, agent_status, audit_status, stop_reason, cancel_reason, audit_refuse_reason, crt_org_id, opr_id, create_time, last_opr_id, last_update_time, last_audit_id, last_audit_time, remark1, remark2, remark3, remark4, remark5
+    </sql>
+
+</mapper>

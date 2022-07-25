@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.newt.boot.dal.mapper.TBMchntUserHistoryMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.newt.boot.dal.entity.TBMchntUserHistory">
+        <id column="id" property="id" />
+        <result column="mchnt_no" property="mchntNo" />
+        <result column="phone" property="phone" />
+        <result column="biz_data1" property="bizData1" />
+        <result column="biz_data2" property="bizData2" />
+        <result column="biz_data3" property="bizData3" />
+        <result column="user_status" property="userStatus" />
+        <result column="opr_id" property="oprId" />
+        <result column="create_time" property="createTime" />
+        <result column="last_opr_id" property="lastOprId" />
+        <result column="last_update_time" property="lastUpdateTime" />
+        <result column="remark1" property="remark1" />
+        <result column="remark2" property="remark2" />
+        <result column="remark3" property="remark3" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, mchnt_no, phone, biz_data1, biz_data2, biz_data3, user_status, opr_id, create_time, last_opr_id, last_update_time, remark1, remark2, remark3
+    </sql>
+
+</mapper>
